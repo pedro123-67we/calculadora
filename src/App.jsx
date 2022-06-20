@@ -9,12 +9,21 @@ function App() {
     setResult(result.concat(e.target.name));
   }
 
+  const Resultado = ()=>{
+    try{
+      setResult(eval(result).toString());
+    } catch (err){
+      setResult("Error");
+    }
+  }
+
   const borrar =() => {
     setResult("");
   }
 
   return (
 < div className="App">
+  <p class="titulo">Calculadora con React</p>
 
     <div className="container">
       <form>
@@ -26,7 +35,7 @@ function App() {
         <button name='9' onClick={NumClick}>9</button>
         <button name='8' onClick={NumClick}>8</button>
         <button name='7' onClick={NumClick}>7</button>
-        <button class="operador"  name='X' onClick={NumClick}>X</button>
+        <button class="operador"  name='*' onClick={NumClick}>X</button>
         <button name='6' onClick={NumClick}>6</button>
         <button name='5' onClick={NumClick}>5</button>
         <button name='4' onClick={NumClick}>4</button>
@@ -37,7 +46,7 @@ function App() {
         <button class="operador"  name='+' onClick={NumClick}>+</button>
         <button name='0' onClick={NumClick}>0</button>
         <button name='.' onClick={NumClick}>.</button>
-        <button class="operador"  onClick={NumClick} id="igual">=</button>
+        <button class="operador"  onClick={Resultado} id="igual">=</button>
         <button class="operador"  onClick={borrar} id="borrar" >Borrar</button>
       </div>
     </div>
