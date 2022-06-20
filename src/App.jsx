@@ -11,7 +11,8 @@ function App() {
 
   const Resultado = ()=>{
     try{
-      setResult(eval(result).toString());
+    
+    setResult(eval(result).toString());
     } catch (err){
       setResult("Error");
     }
