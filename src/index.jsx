@@ -50,15 +50,8 @@ function App() {
         <button class="operador"  onClick={borrar} id="borrar" >Borrar</button>
       </div>
     </div>
-
- 
-
-
-
-
     </div>
- );
-
+);
   
 }
 
