@@ -22,7 +22,7 @@ body{
   width: 300px;
   text-align: center;
   border: 3px solid #1A132F;
-  background: #5B7DB1;
+  background: #000814;
   border-radius: 10px;
 }
 
@@ -35,7 +35,7 @@ body{
 .pantalla{
   height: 80px;
   width: 290px;
-  background-color: #61A4BC;
+  background-color: #000814;
   border: 0px;
   color: #F7E2E2;
   text-align: right;
@@ -43,6 +43,30 @@ body{
   letter-spacing: 2px;
 }
 
+input[type="text"]{
+  height: 75px;
+  width: 250px;
+  border: 0px;
+  color: #f5f3f4;
+  font-size: 27px;
+  letter-spacing: 2px;
+  text-align: right;
+  
+}
+
 #borrar{
   grid-column: 1/5;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  margin: 4px;
+  border-radius: 6px;
+  background-color: #161a1d;
+  color: #ffd60a;
+}
+
+.operador{
+  background: #6a00f4;
 }
